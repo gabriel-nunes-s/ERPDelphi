@@ -2,9 +2,9 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2023/09/05 16:07:22.000.818,=C:\Users\Gabriel\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2023/09/05 16:10:17.334,=C:\Users\Gabriel\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2023/09/05 16:11:42.619,C:\Users\Gabriel\OneDrive\Documents\Embarcadero\Studio\Projects\Win32\Debug\DelphiXE_Basico\ERPDelphi\src\view\View.principal.dfm=C:\Users\Gabriel\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2023/09/05 16:11:42.619,C:\Users\Gabriel\OneDrive\Documents\Embarcadero\Studio\Projects\Win32\Debug\DelphiXE_Basico\ERPDelphi\src\view\View.principal.pas=C:\Users\Gabriel\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2023/09/05 16:12:54.409,C:\Users\Gabriel\OneDrive\Documents\Embarcadero\Studio\Projects\Win32\Debug\DelphiXE_Basico\ERPDelphi\ERPCurso.dproj=C:\Users\Gabriel\OneDrive\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/09/05 16:10:17.000.334,=C:\Users\Gabriel\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/09/05 16:11:42.000.619,C:\Users\Gabriel\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Gabriel\OneDrive\Documents\Embarcadero\Studio\Projects\Win32\Debug\DelphiXE_Basico\ERPDelphi\src\view\View.principal.dfm</Transaction>
+    <Transaction>2023/09/05 16:11:42.000.619,C:\Users\Gabriel\OneDrive\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\Gabriel\OneDrive\Documents\Embarcadero\Studio\Projects\Win32\Debug\DelphiXE_Basico\ERPDelphi\src\view\View.principal.pas</Transaction>
+    <Transaction>2023/09/05 16:12:54.000.409,C:\Users\Gabriel\OneDrive\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\Gabriel\OneDrive\Documents\Embarcadero\Studio\Projects\Win32\Debug\DelphiXE_Basico\ERPDelphi\ERPCurso.dproj</Transaction>
   </Transactions>
 </BorlandProject>

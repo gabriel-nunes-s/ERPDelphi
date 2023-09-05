@@ -2,7 +2,9 @@ program ERPCurso;
 
 uses
   Vcl.Forms,
-  View.principal in 'src\view\View.principal.pas' {ViewPrincipal};
+  View.principal in 'src\view\View.principal.pas' {ViewPrincipal},
+  Vcl.Themes,
+  Vcl.Styles;
 
 {$R *.res}
 

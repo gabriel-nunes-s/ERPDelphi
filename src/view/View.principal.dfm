@@ -2,9 +2,9 @@ object ViewPrincipal: TViewPrincipal
   Left = 0
   Top = 0
   Caption = 'ViewPrincipal'
-  ClientHeight = 437
-  ClientWidth = 795
-  Color = clBtnFace
+  ClientHeight = 591
+  ClientWidth = 969
+  Color = clWindow
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -13
@@ -2128,15 +2128,123 @@ object ViewPrincipal: TViewPrincipal
   OldCreateOrder = False
   PixelsPerInch = 120
   TextHeight = 16
-  object pnlTopo: TPanel
+  object pnlTop: TPanel
     Left = 0
     Top = 0
-    Width = 795
+    Width = 969
     Height = 41
     Align = alTop
+    Color = clMenuBar
+    ParentBackground = False
     TabOrder = 0
-    ExplicitLeft = 392
-    ExplicitTop = 224
+    ExplicitWidth = 948
+    object pnlVersion: TPanel
+      Left = 1
+      Top = 1
+      Width = 80
+      Height = 39
+      Align = alLeft
+      BevelOuter = bvNone
+      Caption = 'Version 1.0'
+      Font.Charset = ANSI_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Inter'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+    end
+    object pnlUserData: TPanel
+      Left = 783
+      Top = 1
+      Width = 185
+      Height = 39
+      Align = alRight
+      BevelOuter = bvNone
+      TabOrder = 1
+      ExplicitLeft = 576
+      ExplicitTop = 0
+      ExplicitHeight = 41
+      object lblAccount: TLabel
+        Left = 121
+        Top = 19
+        Width = 35
+        Height = 15
+        Alignment = taRightJustify
+        Caption = 'Admin'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Inter'
+        Font.Style = []
+        ParentFont = False
+      end
+      object lblUsername: TLabel
+        Left = 108
+        Top = 5
+        Width = 57
+        Height = 15
+        Alignment = taRightJustify
+        Caption = 'Username'
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -12
+        Font.Name = 'Inter'
+        Font.Style = []
+        ParentFont = False
+      end
+    end
+  end
+  object pnlMenu: TPanel
+    Left = 0
+    Top = 41
+    Width = 185
+    Height = 550
+    Align = alLeft
+    Color = clMenu
+    ParentBackground = False
+    TabOrder = 1
+    ExplicitHeight = 580
+    object btnClients: TSpeedButton
+      Left = 8
+      Top = 32
+      Width = 153
+      Height = 30
+      Caption = 'Clients'
+    end
+    object btnProducts: TSpeedButton
+      Left = 8
+      Top = 72
+      Width = 153
+      Height = 30
+      Caption = 'Products'
+    end
+    object btnSuppliers: TSpeedButton
+      Left = 8
+      Top = 112
+      Width = 153
+      Height = 30
+      Caption = 'Suppliers'
+    end
+    object btnFinance: TSpeedButton
+      Left = 8
+      Top = 152
+      Width = 153
+      Height = 30
+      Caption = 'Finance'
+    end
+  end
+  object pnlContent: TPanel
+    Left = 185
+    Top = 41
+    Width = 784
+    Height = 550
+    Align = alClient
+    Caption = 'pnlContent'
+    TabOrder = 2
+    ExplicitLeft = 576
+    ExplicitTop = 328
     ExplicitWidth = 185
+    ExplicitHeight = 41
   end
 end
