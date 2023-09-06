@@ -1,7 +1,7 @@
 object ViewPrincipal: TViewPrincipal
   Left = 0
   Top = 0
-  Caption = 'ViewPrincipal'
+  Caption = 'CRUD'
   ClientHeight = 591
   ClientWidth = 969
   Color = clWindow
@@ -2137,7 +2137,6 @@ object ViewPrincipal: TViewPrincipal
     Color = clMenuBar
     ParentBackground = False
     TabOrder = 0
-    ExplicitWidth = 948
     object pnlVersion: TPanel
       Left = 1
       Top = 1
@@ -2162,9 +2161,6 @@ object ViewPrincipal: TViewPrincipal
       Align = alRight
       BevelOuter = bvNone
       TabOrder = 1
-      ExplicitLeft = 576
-      ExplicitTop = 0
-      ExplicitHeight = 41
       object lblAccount: TLabel
         Left = 121
         Top = 19
@@ -2198,53 +2194,62 @@ object ViewPrincipal: TViewPrincipal
   object pnlMenu: TPanel
     Left = 0
     Top = 41
-    Width = 185
+    Width = 193
     Height = 550
     Align = alLeft
     Color = clMenu
     ParentBackground = False
     TabOrder = 1
-    ExplicitHeight = 580
     object btnClients: TSpeedButton
-      Left = 8
-      Top = 32
-      Width = 153
+      Left = 11
+      Top = 12
+      Width = 170
       Height = 30
       Caption = 'Clients'
     end
     object btnProducts: TSpeedButton
-      Left = 8
-      Top = 72
-      Width = 153
+      Left = 11
+      Top = 48
+      Width = 170
       Height = 30
       Caption = 'Products'
     end
     object btnSuppliers: TSpeedButton
-      Left = 8
-      Top = 112
-      Width = 153
+      Left = 11
+      Top = 84
+      Width = 170
       Height = 30
       Caption = 'Suppliers'
     end
     object btnFinance: TSpeedButton
-      Left = 8
-      Top = 152
-      Width = 153
+      Left = 11
+      Top = 120
+      Width = 170
       Height = 30
       Caption = 'Finance'
     end
+    object lblFilial: TLabel
+      AlignWithMargins = True
+      Left = 4
+      Top = 530
+      Width = 185
+      Height = 16
+      Align = alBottom
+      Alignment = taCenter
+      Caption = 'Filial'
+      ExplicitWidth = 26
+    end
   end
   object pnlContent: TPanel
-    Left = 185
+    Left = 193
     Top = 41
-    Width = 784
+    Width = 776
     Height = 550
     Align = alClient
     Caption = 'pnlContent'
     TabOrder = 2
-    ExplicitLeft = 576
-    ExplicitTop = 328
-    ExplicitWidth = 185
-    ExplicitHeight = 41
+    ExplicitLeft = 177
+    ExplicitTop = 65
+    ExplicitWidth = 784
   end
 end

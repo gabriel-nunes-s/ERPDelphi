@@ -19,6 +19,7 @@ type
     btnProducts: TSpeedButton;
     btnSuppliers: TSpeedButton;
     btnFinance: TSpeedButton;
+    lblFilial: TLabel;
 
   private
     { Private declarations }
