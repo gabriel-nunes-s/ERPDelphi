@@ -1,0 +1,63 @@
+inherited ViewListas: TViewListas
+  BorderStyle = bsNone
+  Caption = 'ViewListas'
+  ClientHeight = 449
+  ClientWidth = 790
+  Position = poMainFormCenter
+  PixelsPerInch = 120
+  TextHeight = 16
+  object pnlTop: TPanel
+    Left = 0
+    Top = 0
+    Width = 790
+    Height = 35
+    Align = alTop
+    TabOrder = 0
+    object pnlIcon: TPanel
+      Left = 1
+      Top = 1
+      Width = 24
+      Height = 33
+      Align = alLeft
+      TabOrder = 0
+      object Image1: TImage
+        Left = 1
+        Top = 1
+        Width = 22
+        Height = 31
+        Align = alClient
+        ParentShowHint = False
+        Picture.Data = {
+          0954506E67496D61676589504E470D0A1A0A0000000D49484452000000180000
+          00180806000000E0773DF8000000097048597300000B1300000B1301009A9C18
+          0000014C4944415478DA6364C00E9280588D817C700A88D781188C38146C07E2
+          07504C2A3004E28F409C4EC88236203E4C860531406C8BCD8234207681B2410A
+          AE03F11B02864D07E2FDC45A3013887F92E06A9083AC80D81788F7116B01C8F0
+          25445A0052FF0588C380380188F7926B812410EB23F16F01F13DA8FA770C9008
+          AD01623FA84F48B6C00E880B90F84B81782D036A9C894083D7939A41840C4006
+          5691620148A12C1106BF07E2D5E45800F2BE261116BC04E20E722CA07910C533
+          105716BD02E289E4581008C40A4458F01688170DCA202A6540CD5CB8C053202E
+          27C7025019234184059F8078CFA00C229A5B30191A4C3000AAFE5A1920556936
+          92F87D200E811A388901524981D8EC842C0015133C4872A022E105100B03B118
+          9238A880BB0735741503A22E01C5CB2C5A05110A40B7801F88CF9361810214E3
+          B5200888CDC8301C064015D13C74410015A479194266FC510000000049454E44
+          AE426082}
+        ShowHint = False
+        Transparent = True
+        ExplicitWidth = 16
+        ExplicitHeight = 16
+      end
+    end
+  end
+  object pnlFooter: TPanel
+    Left = 0
+    Top = 414
+    Width = 790
+    Height = 35
+    Align = alBottom
+    TabOrder = 1
+    ExplicitLeft = 1
+    ExplicitTop = 1
+    ExplicitWidth = 788
+  end
+end

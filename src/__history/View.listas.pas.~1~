@@ -1,0 +1,24 @@
+unit View.listas;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, View.base;
+
+type
+  TViewListas = class(TViewBase)
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  ViewListas: TViewListas;
+
+implementation
+
+{$R *.dfm}
+
+end.

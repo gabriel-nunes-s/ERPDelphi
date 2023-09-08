@@ -1,0 +1,13 @@
+inherited ViewBaseLists1: TViewBaseLists1
+  Caption = 'ViewBaseLists1'
+  PixelsPerInch = 120
+  TextHeight = 16
+  inherited pnlTop: TPanel
+    inherited pnlTitle: TPanel
+      Caption = 'Clients'
+    end
+  end
+  inherited DataSourceSearch: TDataSource
+    DataSet = ServiceCadastro.FDQueryPessoas
+  end
+end

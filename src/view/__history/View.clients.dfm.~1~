@@ -1,0 +1,13 @@
+inherited ViewBaseLists1: TViewBaseLists1
+  Caption = 'ViewBaseLists1'
+  PixelsPerInch = 120
+  TextHeight = 16
+  inherited PageControl1: TPageControl
+    inherited tabRegister: TTabSheet
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
+    end
+  end
+end

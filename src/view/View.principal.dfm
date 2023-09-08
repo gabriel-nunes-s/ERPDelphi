@@ -2206,6 +2206,7 @@ object ViewPrincipal: TViewPrincipal
       Width = 170
       Height = 30
       Caption = 'Clients'
+      OnClick = btnClientsClick
     end
     object btnProducts: TSpeedButton
       Left = 11
@@ -2248,8 +2249,5 @@ object ViewPrincipal: TViewPrincipal
     Align = alClient
     Caption = 'pnlContent'
     TabOrder = 2
-    ExplicitLeft = 177
-    ExplicitTop = 65
-    ExplicitWidth = 784
   end
 end

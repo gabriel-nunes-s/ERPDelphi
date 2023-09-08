@@ -4,7 +4,8 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Buttons;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Buttons,
+  View.clients;
 
 type
   TViewPrincipal = class(TForm)
@@ -20,9 +21,10 @@ type
     btnSuppliers: TSpeedButton;
     btnFinance: TSpeedButton;
     lblFilial: TLabel;
+    procedure btnClientsClick(Sender: TObject);
 
   private
-    { Private declarations }
+
   public
     { Public declarations }
   end;
@@ -33,5 +35,36 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TViewPrincipal.btnClientsClick(Sender: TObject);
+
+begin
+  if Assigned(ViewClients) then
+  begin
+
+    try
+      ViewClients.Parent := pnlContent;
+      ViewClients.Align := alClient;
+      ViewClients.Show;
+
+    finally
+    //FreeAndNil(ViewClients);
+    end;
+
+  end
+  else
+    begin
+      ViewClients := TViewClients.Create(Self);
+      try
+      ViewClients.Parent := pnlContent;
+      ViewClients.Align := alClient;
+      ViewClients.Show;
+
+      finally
+      //FreeAndNil(ViewClients);
+      end;
+    end;
+
+end;
 
 end.

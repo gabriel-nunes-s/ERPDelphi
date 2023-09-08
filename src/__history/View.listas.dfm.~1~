@@ -1,0 +1,5 @@
+inherited ViewListas: TViewListas
+  Caption = 'ViewListas'
+  PixelsPerInch = 120
+  TextHeight = 16
+end
