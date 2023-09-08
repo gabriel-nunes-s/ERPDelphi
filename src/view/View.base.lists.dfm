@@ -1,21 +1,21 @@
 inherited ViewBaseLists: TViewBaseLists
   BorderStyle = bsNone
   Caption = 'ViewBaseLists'
-  ClientHeight = 449
+  ClientHeight = 588
   ClientWidth = 790
   Position = poMainFormCenter
+  ExplicitWidth = 790
+  ExplicitHeight = 588
   PixelsPerInch = 120
   TextHeight = 16
   object pnlFooter: TPanel
     Left = 0
-    Top = 414
+    Top = 553
     Width = 790
     Height = 35
     Align = alBottom
     TabOrder = 0
-    ExplicitLeft = 1
-    ExplicitTop = 1
-    ExplicitWidth = 788
+    ExplicitTop = 414
     object btnNew: TSpeedButton
       Left = 364
       Top = 1
@@ -67,18 +67,20 @@ inherited ViewBaseLists: TViewBaseLists
     Left = 0
     Top = 35
     Width = 790
-    Height = 379
+    Height = 518
     ActivePage = tabSearch
     Align = alClient
     TabOrder = 1
+    ExplicitHeight = 379
     object tabSearch: TTabSheet
       Caption = 'Search'
+      ExplicitHeight = 348
       object DBGrid1: TDBGrid
         AlignWithMargins = True
         Left = 5
         Top = 46
         Width = 772
-        Height = 297
+        Height = 436
         Margins.Left = 5
         Margins.Top = 5
         Margins.Right = 5
@@ -100,9 +102,6 @@ inherited ViewBaseLists: TViewBaseLists
         Align = alTop
         BevelOuter = bvNone
         TabOrder = 1
-        ExplicitLeft = 392
-        ExplicitTop = 24
-        ExplicitWidth = 185
         object SearchBox1: TSearchBox
           Left = 19
           Top = 8

@@ -6,13 +6,28 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, View.base.lists, Data.DB, Vcl.StdCtrls,
   Vcl.WinXCtrls, Vcl.Grids, Vcl.DBGrids, Vcl.ComCtrls, Vcl.Buttons, Vcl.ExtCtrls,
-  Service.cadastro, FireDAC.Stan.Param;
+  Service.cadastro, FireDAC.Stan.Param, Vcl.Mask, Vcl.DBCtrls;
 
 type
   TViewClients = class(TViewBaseLists)
-    btnClose: TButton;
+    pnlClose: TPanel;
+    Image1: TImage;
+    Label2: TLabel;
+    DBEdit2: TDBEdit;
+    Label3: TLabel;
+    DBEdit3: TDBEdit;
+    Label4: TLabel;
+    DBEdit4: TDBEdit;
+    Label5: TLabel;
+    DBEdit5: TDBEdit;
+    Label6: TLabel;
+    DBEdit6: TDBEdit;
+    Label1: TLabel;
+    DBEdit1: TDBEdit;
   procedure FormShow(Sender: TObject);
-    procedure btnCloseClick(Sender: TObject);
+    procedure Image1Click(Sender: TObject);
+    procedure btnEditClick(Sender: TObject);
+    procedure btnSaveClick(Sender: TObject);
   private
     procedure Configuracoes;
   public
@@ -36,16 +51,32 @@ begin
 
 end;
 
-procedure TViewClients.btnCloseClick(Sender: TObject);
+procedure TViewClients.Image1Click(Sender: TObject);
 begin
   inherited;
   Close;
+end;
+
+procedure TViewClients.btnEditClick(Sender: TObject);
+begin
+  inherited;
+  PageControl1.ActivePage := tabRegister;
+  tabRegister.TabVisible := true;
+end;
+
+procedure TViewClients.btnSaveClick(Sender: TObject);
+begin
+  inherited;
+  ServiceCadastro.FDQueryPessoas.Edit;
+  ServiceCadastro.FDQueryPessoas.Post;
+  PageControl1.ActivePage := tabSearch;
 
 end;
 
 procedure TViewClients.Configuracoes;
 begin
   PageControl1.ActivePage := tabSearch;
+  tabRegister.TabVisible := false;
 end;
 
 procedure TViewClients.FormShow(Sender: TObject);

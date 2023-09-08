@@ -24,9 +24,9 @@ type
     procedure btnClientsClick(Sender: TObject);
 
   private
-
+    procedure createView(View : String);
   public
-    { Public declarations }
+
   end;
 
 var
@@ -64,6 +64,11 @@ begin
       //FreeAndNil(ViewClients);
       end;
     end;
+
+end;
+
+procedure TViewPrincipal.createView(View: String);
+begin
 
 end;
 
